@@ -6,11 +6,10 @@ export const api = Axios.create({
 })
 
 export const imagesApi = Axios.create({
-  baseURL: 'https://api.nasa.gov/planetary/apod',
+  baseURL: 'https://bcw-getter.herokuapp.com',
   timeout: 4000,
   params: {
-    api_key: '0yg0MlFKwZBQUhHvrfIJAsclzKqVFA9dY5eNPDDM',
-    sort_by: 'start_date': none, 
-    'end_date': today
+    url: 'https://api.nasa.gov/planetary/apod',
+    api_key: '0yg0MlFKwZBQUhHvrfIJAsclzKqVFA9dY5eNPDDM'    
   }
 })
