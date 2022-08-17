@@ -1,6 +1,6 @@
 <template>
-  <div class="home-page">
-    {{image}}
+  <div class="home-page" :style="{backgroundImage:`url(${image.ImgUrl})`}">
+    <!-- {{image}} -->
   </div>
 </template>
 
@@ -35,5 +35,12 @@ export default {
 </script>
 
 
-<style> 
+<style>
+.home-page {
+  background-size: cover;
+  /* position: fixed; */
+  height: 100vh;
+  width: 100vh;
+}
+
 </style>
